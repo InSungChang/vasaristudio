@@ -16,67 +16,101 @@
     <div class="container">
         <div class="tabs-and-panels">
             <div class="tab-panel-pair">
-                <div class="tab lightblue" onclick="showPanel(5)">05</div>
+                <div class="tab lightblue" onclick="showPanel(0)">05</div>
                 <div id="panel5" class="panel lightblue">
                     <h2>Meta ADS</h2>
-                    <hr/>
-                    <hr/>
+                    <hr />
+                    <hr />
                     <p>Este é o conteúdo xxxxx xxxxx xxxxx. Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx
                         xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx</p>
                 </div>
             </div>
             <div class="tab-panel-pair">
-                <div class="tab lime" onclick="showPanel(4)">04</div>
+                <div class="tab lime" onclick="showPanel(1)">04</div>
                 <div id="panel4" class="panel lime">
                     <h2>Google ADS</h2>
-                    <hr/>
-                    <hr/>
+                    <hr />
+                    <hr />
                     <p>Este é o conteúdo xxxxx xxxxx xxxxx. Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx
                         xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx</p>
                 </div>
             </div>
             <div class="tab-panel-pair">
-                <div class="tab lilac" onclick="showPanel(3)">03</div>
+                <div class="tab lilac" onclick="showPanel(2)">03</div>
                 <div id="panel3" class="panel lilac">
                     <h2>ID. Visual</h2>
-                    <hr/>
-                    <hr/>
+                    <hr />
+                    <hr />
                     <p>Este é o conteúdo xxxxx xxxxx xxxxx. Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx
                         xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx</p>
                 </div>
             </div>
             <div class="tab-panel-pair">
-                <div class="tab pink" onclick="showPanel(2)">02</div>
+                <div class="tab pink" onclick="showPanel(3)">02</div>
                 <div id="panel2" class="panel pink">
                     <h2>Social Media xxxx</h2>
-                    <hr/>
-                    <hr/>
+                    <hr />
+                    <hr />
                     <p>Este é o conteúdo xxxxx xxxxx xxxxx. Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx
                         xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx</p>
                 </div>
             </div>
             <div class="tab-panel-pair">
-                <div class="tab gray" onclick="showPanel(1)">01</div>
+                <div class="tab gray" onclick="showPanel(4)">01</div>
                 <div id="panel1" class="panel gray">
                     <h2>Social Media</h2>
-                    <hr/>
-                    <hr/>
+                    <hr />
+                    <hr />
                     <p>Este é o conteúdo xxxxx xxxxx xxxxx. Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx
                         xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx</p>
                 </div>
             </div>
             <div class="tab-panel-pair">
-                <div class="tab black active-tab" onclick="showPanel(0)">00</div>
+                <div class="tab black" onclick="showPanel(5)">00</div>
                 <div id="panel0" class="panel black active-panel">
                     <h2>ID. Visual</h2>
-                    <hr/>
-                    <hr/>
+                    <hr />
+                    <hr />
                     <p>Este é o conteúdo xxxxx xxxxx xxxxx. Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx
                         xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx.Este é o conteúdo xxxxx xxxxx xxxxx</p>
                 </div>
             </div>
         </div>
     </div>
+    <script>
+        function showPanel(index) {
+            const panels = document.querySelectorAll('.panel');
+            const tabs = document.querySelectorAll('.tab');
+
+            panels.forEach((panel, i) => {
+                if (i === index) {
+                    panel.classList.add('active-panel');
+                    tabs[i].classList.add('active-tab');
+                    tabs[i].classList.remove('inactive');
+                } else {
+                    panel.classList.remove('active-panel');
+                    tabs[i].classList.remove('active-tab');
+                    tabs[i].classList.add('inactive');
+                }
+            });
+
+            // Mantenha a aba lightblue sempre no topo
+            tabs[0].classList.remove('inactive');
+        }
+
+        // Inicializa o painel 5 como ativo
+        showPanel(5);
+
+        // Adiciona a classe 'inactive' a todas as abas, exceto a lightblue e a ativa, ao carregar a página
+        window.addEventListener('load', () => {
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach((tab, index) => {
+                if (index !== 0 && index !== 5) {
+                    tab.classList.add('inactive');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
