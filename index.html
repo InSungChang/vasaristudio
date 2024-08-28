@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Para celulara  -->
     <div class="container">
         <div class="tabs-and-panels">
             <div class="tab-panel-pair">
@@ -73,40 +74,53 @@
             </div>
         </div>
     </div>
-    <script>
-        function showPanel(index) {
-            const panels = document.querySelectorAll('.panel');
-            const tabs = document.querySelectorAll('.tab');
 
-            panels.forEach((panel, i) => {
-                if (i === index) {
-                    panel.classList.add('active-panel');
-                    tabs[i].classList.add('active-tab');
-                    tabs[i].classList.remove('inactive');
-                } else {
-                    panel.classList.remove('active-panel');
-                    tabs[i].classList.remove('active-tab');
-                    tabs[i].classList.add('inactive');
-                }
-            });
+    <!-- Para iPAD e PC -->
+    <div class="container2">
+        <div class="circle">
+            <div class="number" data-index="6">06</div>
+            <div class="number" data-index="7">07</div>
+            <div class="number" data-index="0">00</div>
+            <div class="number" data-index="1">01</div>
+            <div class="number" data-index="2">02</div>
+            <div class="number" data-index="3">03</div>
+            <div class="number" data-index="4">04</div>
+            <div class="number" data-index="5">05</div>
+            <div class="dot" data-index="6"></div>
+            <div class="dot" data-index="7"></div>
+            <div class="dot" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+            <div class="dot" data-index="3"></div>
+            <div class="dot" data-index="4"></div>
+            <div class="dot" data-index="5"></div>
+        </div>
+        <div class="text">
+            <h1 class="title">Identidade Visual</h1>
+            <p class="descricao">Através de um design criativo e estratégico, transformamos sua marca em uma experiência
+                que conecta com seu público, de forma única e personalizada.</p>
+            <p class="subtitle" id="saiba-mais">saiba mais.</p>
+        </div>
+        <div class="sobre-nos-container">
+            <a href="#" class="sobre-nos-button">
+                <span class="sobre-nos-text">
+                    <span class="keyboard-key">S</span>
+                    <span class="keyboard-key">O</span>
+                    <span class="keyboard-key">B</span>
+                    <span class="keyboard-key2">R</span>
+                    <span class="keyboard-key2">E</span>
+                </span>
+                <span class="sobre-nos-text">
+                    <span class="keyboard-key">N</span>
+                    <span class="keyboard-key">Ó</span>
+                    <span class="keyboard-key2">S</span>
+                </span>
+            </a>
+        </div>
+    </div>
 
-            // Mantenha a aba lightblue sempre no topo
-            tabs[0].classList.remove('inactive');
-        }
-
-        // Inicializa o painel 5 como ativo
-        showPanel(5);
-
-        // Adiciona a classe 'inactive' a todas as abas, exceto a lightblue e a ativa, ao carregar a página
-        window.addEventListener('load', () => {
-            const tabs = document.querySelectorAll('.tab');
-            tabs.forEach((tab, index) => {
-                if (index !== 0 && index !== 5) {
-                    tab.classList.add('inactive');
-                }
-            });
-        });
-    </script>
+    <script src="script.js"></script>
+    
 </body>
 
 </html>

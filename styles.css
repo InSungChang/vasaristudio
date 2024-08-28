@@ -1,10 +1,36 @@
+/* 
+Mais detalhes sobre Breakpoints CSS - Ponto de quebra
+https://www.hostinger.com.br/tutoriais/breakpoints-css?utm_campaign=Generic-Tutorials-DSA|NT:Se|LO:BR-t4&utm_medium=ppc&gad_source=1&gclid=Cj0KCQjw1qO0BhDwARIsANfnkv_2CQCitnoywINR7YAOPM_ep-VagiTfDJMKahr_c-fWIrNes1YSGiQaAmNGEALw_wcB
+*/
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
 body {
     font-family: 'Oxygen Mono', monospace;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
 }
+
+.container2 {
+    display: none;
+}
+
 .container {
+    /* Centraliza conteúdo */
+    margin: 0 auto;
+
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -101,4 +127,223 @@ body {
 }
 .tab.lightblue {
     margin-top: 0px;
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+  
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+    .container {
+        display: none;
+    }
+
+    body {
+        font-family: 'Oxygen Mono', monospace;
+        margin: 0;
+        padding: 0;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container2 {
+        display: flex;
+        align-items: center;
+        margin-left: -500px;
+        position: fixed;
+    }
+
+    .circle {
+        width: 550px;
+        height: 550px;
+        border-radius: 50%;
+        border: 1px solid #000;
+        position: relative;
+        margin-left: -450px;
+        box-sizing: border-box;
+        margin-right: 50px;
+    }
+    
+    .circle .number, .circle .dot {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        transition: all 1s ease;
+    }
+    
+    .circle .number {
+        font-size: 4em;
+        font-weight: bold;
+        cursor: pointer;
+        background-color: white;
+        padding: 5px;
+        padding-left: 25px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .circle .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #000;
+    }
+    
+    .number.center {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    
+    .text {
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+    }
+    
+    .title {
+        font-size: 4em;
+        font-weight: bold;
+        margin-bottom: 0px;
+        margin-left: 50px;
+    }
+    
+    .subtitle {
+        margin-top: 0px;
+        font-size: 1em;
+        color: #7D7D7D;
+        margin-left: 60px;
+    }
+    
+    .descricao {
+        display: none;
+        margin-top: 0px;
+        font-size: 1em;
+        color: #7D7D7D;
+        margin-left: 60px;
+        margin-right: 90px;
+        text-align: justify;
+    }
+    
+    .circle {
+        transition: transform 1s ease;
+    }
+    
+    #saiba-mais {
+        cursor: pointer;
+    }
+    
+    .sobre-nos-container {
+        position: fixed;
+        bottom: 50px;
+        right: 90px;
+        font-family: Arial, sans-serif;
+    }
+    .sobre-nos-button {
+        display: inline-block;
+        border: 1px solid #000;
+        padding: 7px;
+        padding-bottom: 0px;
+        padding-right: 2px;
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .keyboard-key {
+        display: inline-block;
+        background-color: #000;
+        color: #fff;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        margin: 3px 5px 0px 0;
+    }
+    
+    .keyboard-key2 {
+        font-size: 40px;
+        margin-left: -8px;
+        margin-right: 2px;
+        margin-top: -4px;
+        padding-left: 3px;
+    }
+    
+    .sobre-nos-text {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    @keyframes flip {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(360deg); }
+    }
+    
+    @keyframes fade {
+        0% { opacity: 1; }
+        50% { opacity: 0.3; }
+        100% { opacity: 1; }
+    }
+    
+    @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+    
+    @keyframes shake {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        75% { transform: translateX(5px); }
+    }
+    
+    @keyframes rotate {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    @keyframes scale {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.5); }
+        100% { transform: scale(1); }
+    }
+    
+    @keyframes bounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .animate-flip { animation: flip 1s; }
+    .animate-fade { animation: fade 1s; }
+    .animate-pulse { animation: pulse 1s; }
+    .animate-shake { animation: shake 0.5s; }
+    .animate-rotate { animation: rotate 1s; }
+    .animate-scale { animation: scale 1s; }
+    .animate-bounce { animation: bounce 0.5s; }
+
+}
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+    .container {
+        display: none;
+    }
+    .container2 {
+        margin-left: -700px;
+    }
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    .container {
+        display: none;
+    }
 }
