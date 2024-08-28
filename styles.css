@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Oxygen Mono', monospace;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -24,7 +24,7 @@ body {
     padding: 10px 20px 30px;
     cursor: pointer;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     color: #fff;
     width: 40%;
     margin-left: auto; /* Empurra a aba para a direita */
@@ -33,11 +33,11 @@ body {
 }
 
 .tab.inactive {
-    margin-top: -130px;
+    margin-top: -150px; /* Mover a aba inativa para cima */
 }
 
 .active-tab {
-    margin-top: -90px; /* Mover a aba ativa para cima */
+    margin-top: -100px; /* Mover a aba ativa para cima */
 }
 
 .panel {
