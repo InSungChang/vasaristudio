@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const saibaMais = document.getElementById("saiba-mais");
 
     const totalItems = numbers.length;
-    const circleRadius = 275; // Raio do círculo (metade da largura/altura)
-    const numberRadius = circleRadius + 40; // Posiciona os números fora do círculo
-    const dotRadius = circleRadius; // Mantém os dots na borda do círculo
+    const circleRadius = 275;
+    const numberRadius = circleRadius + 40;
+    const dotRadius = circleRadius;
 
     function positionItems() {
         numbers.forEach((number, index) => {
@@ -30,15 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function rotateToPosition(clickedIndex) {
+    function rotateToPosition(clickedIndex, duration = 1000) {
         const rotationAngle = -clickedIndex * (360 / totalItems);
+        circle.style.transition = `transform ${duration}ms ease-out`;
         circle.style.transform = `rotate(${rotationAngle}deg)`;
 
         numbers.forEach((number) => {
+            number.style.transition = `transform ${duration}ms ease-out`;
             number.style.transform = `translate(-50%, -50%) rotate(${-rotationAngle}deg)`;
         });
 
         dots.forEach((dot) => {
+            dot.style.transition = `transform ${duration}ms ease-out`;
             dot.style.transform = `translate(-50%, -50%) rotate(${-rotationAngle}deg)`;
         });
     }
@@ -62,6 +65,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Inicializa a posição dos números e dots
     positionItems();
+
+    // Animação inicial
+    const initialRotations = 1; // Número de rotações completas
+    const initialDuration = 2000; // Duração total da animação em milissegundos
+    const finalIndex = 0; // Índice do número 00
+
+    circle.style.transition = `transform ${initialDuration}ms ease-in-out`;
+    circle.style.transform = `rotate(${-360 * initialRotations}deg)`;
+
+    numbers.forEach((number) => {
+        number.style.transition = `transform ${initialDuration}ms ease-in-out`;
+        number.style.transform = `translate(-50%, -50%) rotate(${360 * initialRotations}deg)`;
+    });
+
+    dots.forEach((dot) => {
+        dot.style.transition = `transform ${initialDuration}ms ease-in-out`;
+        dot.style.transform = `translate(-50%, -50%) rotate(${360 * initialRotations}deg)`;
+    });
+
+    // Após a animação inicial, rotacione para a posição do número 00
+    setTimeout(() => {
+        rotateToPosition(finalIndex, 1000);
+        updateText(finalIndex);
+    }, initialDuration);
 
     numbers.forEach((number) => {
         number.addEventListener("click", () => {
@@ -139,5 +166,4 @@ document.addEventListener("DOMContentLoaded", () => {
             showPanel(index);
         });
     });
-    
 });
