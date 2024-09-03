@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
     
     function animateRandomKey() {
-        const keys = document.querySelectorAll('.keyboard-key');
+        const keys = document.querySelectorAll('.keyboard-key, .number');
         const randomKey = keys[Math.floor(Math.random() * keys.length)];
         const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
         

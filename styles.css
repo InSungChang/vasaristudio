@@ -194,6 +194,24 @@ body {
         align-items: center;
     }
     
+    .circle .number::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 130%;
+        height: 3px;
+        background-color: #000;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease-out;
+    }
+
+    .circle .number:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
     .circle .dot {
         width: 8px;
         height: 8px;
