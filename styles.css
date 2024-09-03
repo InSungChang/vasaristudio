@@ -77,6 +77,7 @@ body {
     max-height: 105px; /* Altura inicial do painel */
     overflow: hidden;
     transition: max-height 0.5s ease-out;
+    cursor: pointer;
 }
 
 .active-panel {
@@ -130,6 +131,13 @@ body {
 .tab.lightblue {
     margin-top: 0px;
 }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.animate-bounce { animation: bounce 0.5s; }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 

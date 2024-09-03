@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
     
     function animateRandomKey() {
-        const keys = document.querySelectorAll('.keyboard-key, .number');
+        const keys = document.querySelectorAll('.keyboard-key, .tab');
         const randomKey = keys[Math.floor(Math.random() * keys.length)];
         const randomAnimation = animations[Math.floor(Math.random() * animations.length)];
         
@@ -127,8 +127,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }, {once: true});
     }
     
-    setInterval(animateRandomKey, 2000);
+    setInterval(animateRandomKey, 1000);
 
+    // Função para exibir o painel com base no índice
     function showPanel(index) {
         const panels = document.querySelectorAll('.panel');
         const tabs = document.querySelectorAll('.tab');
@@ -160,10 +161,24 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    const panels = document.querySelectorAll('.panel');
+    panels.forEach((panel, index) => {
+        if (index !== 0 && index !== 5) {
+            panel.classList.add('inactive');
+        }
+    });
+
     // Adiciona event listeners para as abas
     tabs.forEach((tab, index) => {
         tab.addEventListener('click', () => {
             showPanel(index);
         });
     });
+
+    panels.forEach((panel, index) => {
+        panel.addEventListener('click', () => {
+            showPanel(index);
+        });
+    });
+
 });
