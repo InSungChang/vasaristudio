@@ -13,14 +13,16 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        fetch-depth: 0
+        token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Generate sitemap
-      uses: cicirello/generate-sitemap@v1
+      uses: FullStackIndie/sitemap-generator@v1.4.0
       with:
-        base-url-path: 'www.vasaristudio.com.br'
+        url: 'https://InSungChang.github.io/'
 
     - name: Commit sitemap
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
