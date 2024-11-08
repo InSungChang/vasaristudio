@@ -20,6 +20,9 @@ jobs:
       with:
         url: 'https://InSungChang.github.io/'
 
+    - name: List files
+      run: ls -la
+
     - name: Commit sitemap
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
