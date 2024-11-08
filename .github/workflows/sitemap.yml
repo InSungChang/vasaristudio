@@ -18,7 +18,7 @@ jobs:
     - name: Generate sitemap
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: 'https://www.vasaristudio.com.br/'
+        base-url-path: 'https://insungchang.github.io/'
 
     - name: Commit sitemap
       run: |
