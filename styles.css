@@ -120,6 +120,25 @@ body {
 .tab.lightblue, .panel.lightblue {
     background-color: #add8e6;
 }
+.tab.blue-magenta, .panel.blue-magenta {
+    background-color: #BFB7EA;
+}
+.tab.mauve, .panel.mauve {
+    background-color: #EAB7D9;
+}
+.tab.lightblue2, .panel.lightblue2 {
+    background-color: #B7D4EA;
+}
+.tab.midnightblue, .panel.midnightblue {
+    background-color: #002A49;
+}
+.tab.darkslategray, .panel.darkslategray {
+    background-color: #1E3840;
+}
+.tab.lightpink, .panel.lightpink {
+    background-color: #EAB9B7;
+}
+
 .active-tab {
     background-color: #a51c1c;
     color: #000000;
@@ -128,7 +147,7 @@ body {
 .active-panel {
     display: block;
 }
-.tab.lightblue {
+.tab.lightpink {
     margin-top: 0px;
 }
 

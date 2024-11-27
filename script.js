@@ -154,20 +154,20 @@ document.addEventListener("DOMContentLoaded", () => {
         tabs[0].classList.remove('inactive');
     }
 
-    // Inicializa o painel 5 como ativo
-    showPanel(5);
+    // Inicializa o painel 8 como ativo
+    showPanel(11);
 
     // Adiciona a classe 'inactive' a todas as abas, exceto a lightblue e a ativa, ao carregar a página
     const tabs = document.querySelectorAll('.tab');
     tabs.forEach((tab, index) => {
-        if (index !== 0 && index !== 5) {
+        if (index !== 0 && index !== 11) {
             tab.classList.add('inactive');
         }
     });
 
     const panels = document.querySelectorAll('.panel');
     panels.forEach((panel, index) => {
-        if (index !== 0 && index !== 5) {
+        if (index !== 0 && index !== 11) {
             panel.classList.add('inactive');
         }
     });
