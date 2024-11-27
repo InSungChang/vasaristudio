@@ -158,6 +158,23 @@ body {
 
 .animate-bounce { animation: bounce 0.5s; }
 
+.entre-em-contato-container{
+    display: flex;
+}
+
+.logov {
+    width: 20px; /* Ajuste o tamanho conforme necessário */
+    height: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.entre-em-contato{
+    width: 50%; /* Ajuste o tamanho conforme necessário */
+    margin-left: 170px;
+    margin-top: 13px;
+}
+
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
