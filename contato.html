@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    
+    <a href="index.html" class="back-button">Voltar</a>
+
+    <div class="container">
+        
+        <div class="left-side">
+            <p><img src="img/location-icon.png" class="location-icon" alt="Localização">Rua Marechal Rondon, 255</p>
+            <p><img src="img/phone-icon.png" class="phone-icon" alt="Telefone"> (41) 99780-8912</p>
+            <p><img src="img/email-icon.png" class="email-icon" alt="Email"> vasaristudiocuritiba@gmail.com</p>
+            <p><img src="img/instagram-icon.png" class="instagram-icon" alt="Instagram">@vasaristudio</p>
+        </div>
+
+        <div class="right-side">
+            <form id="contact-form">
+                <fieldset>
+                    <legend>Formulário para contato</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <label for="sobrenome">Sobrenome</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="nome" name="nome" required>
+                        <input type="text" id="sobrenome" name="sobrenome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <label for="celular">Celular</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <input type="tel" id="celular" name="celular" required>
+                    </div>
+                    <div class="form-group2">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" required></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>    
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+    <a href="https://wa.me/554197808912" class="whatsapp-icon" target="_blank">
+        <img src="img/whatsapp-icon.png" alt="WhatsApp">
+    </a>
+    <script src="script_contato.js"></script>
+</body>
+</html>

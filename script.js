@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const finalIndex = 0; // Índice do número 00
 
     circle.style.transition = `transform ${initialDuration}ms ease-in-out`;
-    circle.style.transform = `rotate(${-180 * initialRotations}deg)`;
+    circle.style.transform = `rotate(${-360 * initialRotations}deg)`;
 
     numbers.forEach((number) => {
         number.style.transition = `transform ${initialDuration}ms ease-in-out`;
@@ -184,5 +184,5 @@ document.addEventListener("DOMContentLoaded", () => {
             showPanel(index);
         });
     });
-
+    
 });

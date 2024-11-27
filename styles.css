@@ -179,8 +179,17 @@ body {
         margin-left: -450px;
         box-sizing: border-box;
         margin-right: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
+    .logomarca {
+        width: 130px; /* Ajuste o tamanho conforme necessário */
+        height: auto;
+        border-radius: 50%; /* Faz a imagem ficar circular */
+    }
+
     .circle .number, .circle .dot {
         position: absolute;
         transform: translate(-50%, -50%);
@@ -270,6 +279,18 @@ body {
         cursor: pointer;
     }
     
+    .entre-em-contato-container {
+        position: fixed;
+        top: 50px;
+        right: 90px;
+        font-family: Arial, sans-serif;
+    }
+
+    .entre-em-contato {
+        width: 200px; /* Ajuste o tamanho conforme necessário */
+        height: auto;
+    }
+
     .sobre-nos-container {
         position: fixed;
         bottom: 50px;
@@ -374,4 +395,5 @@ body {
     .container {
         display: none;
     }
+    
 }
