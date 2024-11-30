@@ -4,17 +4,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: 120px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .back-button {
     display: inline-block;
-    margin: 10px 10px 10px 20px;
+    margin: 10px;
     padding: 10px 20px;
     background-color: white;
     color: black;
@@ -30,17 +34,20 @@ body {
 }
 
 .left-side, .right-side {
-    width: 45%;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .left-side a, .left-side p {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .left-side img {
-    margin-right: 25px;
+    margin-right: 15px;
+    width: 25px;
+    height: auto;
 }
 
 form {
@@ -50,40 +57,39 @@ form {
 
 .form-group {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
-
-.form-group2 {
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.form-group label,
-.form-group2 label {
-    flex: 1;
-    margin-right: 10px;
-    margin-left: 5px;
-}
-
-.form-group input, .form-group2 textarea {
-    flex: 2;
+.form-group input, 
+.form-group2 textarea {
+    width: 100%;
     padding: 10px;
-    margin-left: 5px;
     border: 1px solid white;
     background-color: black;
     color: white;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Estilo para placeholders */
+::placeholder {
+    color: #888;
+    opacity: 0.7;
+}
+
+.form-group2 {
+    margin-bottom: 20px;
 }
 
 button[type="submit"] {
     background-color: white;
     color: black;
     border: none;
-    padding: 10px 240px;
+    padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 100%;
 }
 
 button[type="submit"]:hover {
@@ -92,23 +98,15 @@ button[type="submit"]:hover {
 
 .whatsapp-icon {
     position: fixed;
-    bottom: 20px;
+    bottom: 490px;
     right: 20px;
-    width: 50px; /* Ajuste o tamanho conforme necessário */
+    width: 50px;
     height: 50px;
     border-radius: 50%;    
     display: flex;
     justify-content: center;
     align-items: center;
     transition: transform 0.3s;
-}
-
-.location-icon,
-.phone-icon,
-.email-icon,
-.instagram-icon {
-    width: 30px; /* Ajuste o tamanho conforme necessário */
-    height: auto;
 }
 
 .whatsapp-icon img {
@@ -119,3 +117,127 @@ button[type="submit"]:hover {
 .whatsapp-icon:hover {
     transform: scale(1.1);
 }
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+    .whatsapp-icon {
+        bottom: 300px;
+        right: 20px;
+    }
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+    .whatsapp-icon {
+        bottom: 760px;
+        right: 30px;
+    }
+}
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+    .whatsapp-icon {
+        bottom: 500px;
+        right: 30px;
+    }
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+    .container {
+        padding: 60px;
+    }
+
+    .left-side, .right-side {
+        width: 45%;
+    }
+
+    .form-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-group label {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .form-group input {
+        flex: 2;
+    }
+    .whatsapp-icon {
+        bottom: 220px;
+        left: 70px;
+    }
+}
+
+/* @media screen and (min-width: 375px) and (max-width: 667px) {
+     .container {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .left-side p {
+        font-size: 0.9em;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+    .whatsapp-icon {
+        bottom: 500px;
+        right: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 30px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input {
+        margin-bottom: 10px;
+    }
+        
+}
+
+@media screen and (min-width: 1024px) {
+   .container {
+        padding: 60px;
+    }
+
+    .left-side, .right-side {
+        width: 45%;
+    }
+
+    .form-group {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .form-group label {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    .form-group input {
+        flex: 2;
+    }
+
+    .whatsapp-icon {
+        bottom: 180px;
+        right: 960px;
+    }
+} */
