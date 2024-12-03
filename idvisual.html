@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identidade Visual</title>
+    <link rel="stylesheet" href="idvisual.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="back-button">Voltar</a>
+        <img src="img/idvisual.png" alt="Id-visual" class="identidade-visual">
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="tabs-and-panels">
+                <a href="contato.html" target="_blank" class="entre-em-contato-button">
+                    <img src="img/entreemcontato.png" alt="Entre-em-contato" class="entre-em-contato">
+                </a>
+                <div class="tab-panel-pair">
+                    <div class="tab placa" onclick="showPanel(0)"></div>
+                    <div id="panel2" class="panel placa">
+                        <img src="img/placa.png" alt="Placa" class="placa">
+                    </div>
+                </div>
+                <div class="tab-panel-pair">
+                    <div class="tab bolsa" onclick="showPanel(1)"></div>
+                    <div id="panel1" class="panel bolsa">
+                        <img src="img/bolsa.png" alt="Bolsa" class="bolsa">
+                    </div>
+                </div>
+                <div class="tab-panel-pair">
+                    <div class="tab caderno" onclick="showPanel(2)"></div>
+                    <div id="panel0" class="panel caderno active-panel">
+                        <img src="img/caderno.png" alt="Caderno" class="caderno">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    
+    <script src="fichario.js"></script>
+
+</body>
+
+</html>

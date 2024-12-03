@@ -218,6 +218,10 @@ body {
     margin-left: 45%;
 }
 
+.id-visual{
+    color: #fff;
+    margin-left: 20px;
+}
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
 /* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -371,12 +375,6 @@ body {
         top: 50px;
         right: 90px;
         font-family: Arial, sans-serif;
-    }
-
-    .entre-em-contato {
-        width: 200px;
-        /* Ajuste o tamanho conforme necessário */
-        height: auto;
     }
 
     .sobre-nos-container {
