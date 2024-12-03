@@ -359,7 +359,8 @@ body {
     }
 
     .descricao {
-        display: none;
+        /* display: none; */
+        display: block;
         margin-top: 0px;
         font-size: 1em;
         color: #7D7D7D;

@@ -61,10 +61,28 @@ document.addEventListener("DOMContentLoaded", () => {
             "O suporte técnico oferece a resolução de problemas técnicos e um atendimento dedicado aos usuários. Com isso, garantimos que dúvidas e dificuldades sejam solucionadas de forma rápida e eficiente, proporcionando uma experiência mais tranquila e produtiva.",
             "Com uma infraestrutura sólida e atualizada, a empresa ganha em eficiência operacional e consegue prevenir problemas técnicos, além de oferecer uma base confiável para o crescimento e inovação tecnológica.",
             "Marcas e Patentes"];  
-
+        const links = [
+                "idvisualnotebook.html",        // Identidade Visual
+                "social-media-strategy.html",  // Social Media Strategy
+                "socialmedia.html",     // Social Media
+                "audiovisual.html",     // Audio Visual
+                "google-ads.html",      // Google ADS
+                "meta-ads.html",        // Meta ADS
+                "ux-design.html",       // UX design
+                "desenvolvimento-web.html",  // Desenvolvimento de Aplicação Web
+                "analise-dados.html",   // A análise de dados
+                "suporte-tecnico.html", // Suporte técnico
+                "infraestrutura.html",  // Infraestrutura
+                "marcas-patentes.html"  // Marcas e Patentes
+            ];
+        
         title.textContent = titles[clickedIndex];
         subtitle.textContent = subtitles[clickedIndex];
         descricao.textContent = descricoes[clickedIndex];
+
+        // Atualizar link do "saiba mais"
+        const saibaMais = document.getElementById("saiba-mais");
+        saibaMais.href = links[clickedIndex];
     }
 
     // Inicializa a posição dos números e dots
@@ -102,13 +120,14 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    saibaMais.addEventListener("click", () => {
+    /* saibaMais.addEventListener("click", () => {
         if (descricao.style.display === "block") {
             descricao.style.display = "none";
         } else {
             descricao.style.display = "block";
         }
-    });
+    }); */
+    descricao.style.display = "block";
 
     const animations = [
         'animate-flip',
