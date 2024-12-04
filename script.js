@@ -63,17 +63,17 @@ document.addEventListener("DOMContentLoaded", () => {
             "Marcas e Patentes"];  
         const links = [
                 "idvisualnotebook.html",        // Identidade Visual
-                "social-media-strategy.html",  // Social Media Strategy
-                "socialmedia.html",     // Social Media
-                "audiovisual.html",     // Audio Visual
-                "google-ads.html",      // Google ADS
-                "meta-ads.html",        // Meta ADS
-                "ux-design.html",       // UX design
-                "desenvolvimento-web.html",  // Desenvolvimento de Aplicação Web
-                "analise-dados.html",   // A análise de dados
-                "suporte-tecnico.html", // Suporte técnico
-                "infraestrutura.html",  // Infraestrutura
-                "marcas-patentes.html"  // Marcas e Patentes
+                "https://wa.me/554197808912",  // Social Media Strategy
+                "socialmedianotebook.html",     // Social Media
+                "https://wa.me/554197808912",     // Audio Visual
+                "https://wa.me/554197808912",      // Google ADS
+                "https://wa.me/554197808912",        // Meta ADS
+                "https://wa.me/554197808912",       // UX design
+                "https://wa.me/554199166567",  // Desenvolvimento de Aplicação Web
+                "https://wa.me/554199166567",   // A análise de dados
+                "https://wa.me/554199166567", // Suporte técnico
+                "https://wa.me/554199166567",  // Infraestrutura
+                "https://wa.me/554199166567"  // Marcas e Patentes
             ];
         
         title.textContent = titles[clickedIndex];

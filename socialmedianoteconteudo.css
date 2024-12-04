@@ -1,0 +1,150 @@
+body {
+    font-family: 'Oxygen Mono', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: white;
+    color: black;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer {
+}
+
+.entre-em-contato {
+    width: 15%;
+    position: fixed;
+    left: 150px;
+    top: 100px;
+}
+
+.container {
+    /* Centraliza conteúdo */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.tabs-and-panels {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.tab-panel-pair {
+    margin-bottom: 0px;
+}
+
+.tab {
+    border-radius: 0 0 0 0;
+    padding: 0px 0px 0px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    margin-left: auto;
+    /* Empurra a aba para a direita */
+    /* margin-top: -190px; */
+    transition: margin-top 0.5s ease-out;
+}
+
+.tab.inactive {
+    margin-top: -50px;
+    /* Mover a aba inativa para cima */
+}
+
+.active-tab {
+    margin-top: -170px;
+    /* Mover a aba ativa para cima */
+}
+
+.panel {
+    padding: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    width: 100%;
+    max-height: 300px;
+    /* Altura inicial do painel */
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    cursor: pointer;
+}
+
+/* Tamanho do painel */
+.active-panel {
+    max-height: 630px;
+}
+
+.tab.braves,
+.panel.braves {
+    background-color: transparent;
+}
+
+.tab.invisalign,
+.panel.invisalign {
+    background-color: transparent;
+}
+
+.active-tab {
+    background-color: transparent;
+    color: #000000;
+    color: #fff;
+}
+
+.active-panel {
+    display: block;
+}
+
+.tab.braves {
+    margin-top: 0px;
+}
+
+/* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (max-width: 375px) {
+}
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+}
+
+/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
+}
+
+/* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
+}
