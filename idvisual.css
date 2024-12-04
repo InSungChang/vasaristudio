@@ -44,10 +44,9 @@ main {
 
 footer {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding: 20px;
-    width: 100%;
+    justify-content: end;
+    margin-right: 9%;
+    margin-bottom: -20%;
 }
 
 .entre-em-contato-button {
