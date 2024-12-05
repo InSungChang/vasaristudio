@@ -10,8 +10,8 @@ body {
 
 .entre-em-contato{
     position: fixed;
-    left: 20%;
-    margin-top: 7%;
+    left: 1%;
+    margin-top: 1%;
     max-width: 30%;
     max-height: 60px;
     object-fit: contain;    
@@ -19,8 +19,8 @@ body {
 
 .logov {
     position: fixed;
-    right: 35%;
-    margin-top: 25%;
+    right: 30%;
+    margin-top: 110%;
     object-fit: contain;    
 }
 
@@ -31,7 +31,7 @@ body {
     background-size: contain;
     position: relative;
     overflow: hidden;
-    margin-left: 120px;
+    margin-left: 140px;
     margin-top: -70px;
 }
 
@@ -70,4 +70,31 @@ button {
 
 .next {
     right: 157px;
+}
+
+@media (min-width: 576px) {
+    .entre-em-contato{
+        position: fixed;
+        left: 1%;
+        margin-top: 1%;
+        max-width: 30%;
+        max-height: 60px;
+        object-fit: contain;    
+    }
+    .logov {
+        position: fixed;
+        right: 35%;
+        margin-top: 25%;
+        object-fit: contain;    
+    }
+    .mockup {
+        width: 480px;
+        height: 760px;
+        background: url('img/celular.PNG') no-repeat center center;
+        background-size: contain;
+        position: relative;
+        overflow: hidden;
+        margin-left: 140px;
+        margin-top: -70px;
+    }
 }
