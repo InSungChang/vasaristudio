@@ -1,0 +1,33 @@
+[33mdb8dc07[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{0}: pull --tags origin main: Fast-forward
+[33ma13e3ae[m HEAD@{1}: reset: moving to HEAD~3
+[33mdb8dc07[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{2}: reset: moving to HEAD~3
+[33m1309e81[m HEAD@{3}: commit: Ajustes no audiovisual
+[33m9cd3bb8[m HEAD@{4}: commit: Retirando os videos
+[33m9dcc8e5[m HEAD@{5}: commit: Audio e Visual
+[33mdb8dc07[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m HEAD@{6}: commit: Botão de voltar
+[33m0e31963[m HEAD@{7}: commit: Inserção de logo
+[33m37fcf73[m HEAD@{8}: commit: Alterações Social Media e Saiba mais restantes dos itens
+[33ma13e3ae[m HEAD@{9}: commit: Pagina de Id Visual Notebook
+[33m0f656fa[m HEAD@{10}: commit: Página de social media
+[33md731c26[m HEAD@{11}: commit: Ajuste
+[33m1e95bbe[m HEAD@{12}: commit: Página de identidade visual para celular
+[33mae83620[m HEAD@{13}: commit: Ajuste responsivo tela do contato
+[33mad6a9ee[m HEAD@{14}: commit: Logo e entre em contato para celular
+[33m55ecdaa[m HEAD@{15}: commit: Novos paineis
+[33m444f845[m HEAD@{16}: commit: Tela de contato
+[33m97080f8[m HEAD@{17}: commit: Adicionado mais itens para Tablet e PC
+[33m2f5d5c9[m HEAD@{18}: pull --tags origin main: Fast-forward
+[33me15bdd6[m HEAD@{19}: commit: Alteração para vasaristudio
+[33m2099e9a[m HEAD@{20}: commit: Testando github
+[33mbf89b9b[m HEAD@{21}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m6fb002c[m HEAD@{22}: commit: Atualizado CNAME
+[33m9101fa7[m HEAD@{23}: commit: Mais alguns ajuste de animação.
+[33md186fc2[m HEAD@{24}: commit: Mais ajustes de animações
+[33m0c47bf8[m HEAD@{25}: commit: Mais animações
+[33m996a317[m HEAD@{26}: pull --tags origin main: Merge made by the 'ort' strategy.
+[33m2dce285[m HEAD@{27}: commit: Ajuste para exibir hr
+[33mf47a10e[m HEAD@{28}: commit: Responsividade, para celular ficou animação de fichas e para tablet e pc ficou animação com círculo.
+[33m42f7ce0[m HEAD@{29}: commit: Descrições atualizadas
+[33m21e528f[m HEAD@{30}: commit: Animação finalizada
+[33m9d197a5[m HEAD@{31}: commit: Inicaindo novo layout
+[33m568cb6e[m HEAD@{32}: clone: from github.com:InSungChang/changcriativo2.git

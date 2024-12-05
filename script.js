@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 "idvisualnotebook.html",        // Identidade Visual
                 "https://wa.me/554197808912",  // Social Media Strategy
                 "socialmedianotebook.html",     // Social Media
-                "https://wa.me/554197808912",     // Audio Visual
+                "audiovisual.html",     // Audio Visual
                 "https://wa.me/554197808912",      // Google ADS
                 "https://wa.me/554197808912",        // Meta ADS
                 "https://wa.me/554197808912",       // UX design
