@@ -556,6 +556,20 @@ body {
     }
 }
 
+/* Iphone 12 Pro Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 840px) {
+    .container {
+        display: none;
+    }
+
+    .container2 {
+        margin-left: 0px;
+        width: 80%;
+        height: auto;
+        font-size: 60%;
+    }
+}
+
 /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
     .container {
@@ -563,7 +577,10 @@ body {
     }
 
     .container2 {
-        margin-left: -700px;
+        margin-left: 0px;
+        width: 80%;
+        height: auto;
+        font-size: 110%;
     }
 }
 
@@ -574,7 +591,8 @@ body {
     }
     
     .entre-em-contato {
-        width: 50%;
+        width: 60%;
+        height: auto;
         /* Ajuste o tamanho conforme necessário */
         margin-top: 13px;
         margin-left: 50%;
